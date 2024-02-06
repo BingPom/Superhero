@@ -1,4 +1,10 @@
 package com.example.superhero.model
 
-class Hero(nameRes: Any, descriptionRes: Any, imageRes: Int) {
-}
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Hero (
+    @StringRes var nameRes: Int,
+    @StringRes var descriptionRes: Int,
+    @DrawableRes var imageRes: Int
+    )
