@@ -80,8 +80,16 @@ fun SuperheroTopBar(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun AppPreview_Light() {
     SuperheroTheme {
+        SuperheroApp()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun AppPreview_Dark() {
+    SuperheroTheme(true) {
         SuperheroApp()
     }
 }
